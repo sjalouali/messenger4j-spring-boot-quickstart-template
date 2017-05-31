@@ -237,6 +237,7 @@ public class MessengerPlatformCallbackHandler {
                 .addUrlButton("Open Web URL", "https://www.oculus.com/en-us/rift/").toList()
                 .addPostbackButton("Trigger Postback", "DEVELOPER_DEFINED_PAYLOAD").toList()
                 .addCallButton("Call Phone Number", "+16505551234").toList()
+                .addShareButton().toList()
                 .build();
 
         final ButtonTemplate buttonTemplate = ButtonTemplate.newBuilder("Tap a button", buttons).build();
