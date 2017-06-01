@@ -234,7 +234,6 @@ public class MessengerPlatformCallbackHandler {
 
     private void sendButtonMessage(String recipientId) throws MessengerApiException, MessengerIOException {
         final List<Button> buttons = Button.newListBuilder()
-                .addUrlButton("Open Web URL", "https://www.oculus.com/en-us/rift/").toList()
                 .addPostbackButton("Trigger Postback", "DEVELOPER_DEFINED_PAYLOAD").toList()
                 .addCallButton("Call Phone Number", "+16505551234").toList()
                 .addShareButton().toList()
